@@ -1,0 +1,75 @@
+/* Reset some default styles for a more consistent base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a modern, legible font */
+  line-height: 1.6;
+  color: #333; /* A softer alternative to black for text */
+  background-color: #f4f4f4; /* A light background to ease eye strain */
+  padding: 20px; /* Add some padding around the content */
+}
+
+/* Container for centering and constraining content width */
+.container {
+  display: flex; /* Use flexbox to align children */
+  justify-content: center; /* Center children horizontally */
+  align-items: center; /* Center children vertically */
+  width: 100%; /* Set to the desired width, 100% for full width */
+  height: 1000px; /* Set to the desired height */
+  background-color: white; /* Background color for the container */
+  overflow: hidden; /* Hide any overflow */
+}
+
+.three-canvas {
+  width: 100%; /* Set to the desired width or less */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 100%; /* Ensure it doesn't exceed the container's height */
+  background-color: black; /* Background color for the canvas */
+}
+
+/* Header styles */
+header {
+  margin-bottom: 40px; /* Add some space below the header */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #007bff; /* A bright color for the main heading to make it stand out */
+}
+
+/* Section styles for different parts of the showcase */
+section {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff; /* White background for content areas to stand out from the body background */
+  border-radius: 8px; /* Slightly rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* A subtle shadow for depth */
+}
+
+section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Utility class for animations */
+.my-element {
+  transition: transform 0.3s ease; /* Smooth transition for any transformations */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem; /* Slightly smaller heading on smaller screens */
+  }
+
+  .container {
+    padding: 0 10px; /* Reduce padding on smaller screens */
+  }
+}
